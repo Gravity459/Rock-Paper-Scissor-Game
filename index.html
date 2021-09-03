@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock-Paper-Scissor</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="upper-content">
+			<h1 id="welcome-header" class="colors">Welcome to the ROCK PAPER & SCISSORS GAME!!!</h1>
+		</div>
+		
+		<div class="down-content">
+			<div class="rock">
+				<div class="box">
+					<img src="/icon images/rock.jpg" alt="rock">
+				</div>
+			</div>
+			
+			<div class="paper">
+				<div class="box">
+					<img src="/icon images/paper.jpg" alt="paper">
+				</div>
+			</div>
+
+			<div class="scissors">
+				<div class="box">
+					<img src="/icon images/scissor.jpg" alt="scissor">
+				</div>
+			</div>
+		</div>
+
+		<div class="scores-container">
+
+			<div class="start-end">
+				<button class="start-stop-box" id="start">START</button>
+				<button class="start-stop-box" id="end">FINISH</button>
+			</div>
+
+			<div class="live-results">
+				<h2 id="start-heading" >Press 'START' to play!</h2> 
+				
+				<div class="options">
+					<div id="player-option">
+						<h3>Player: <span id="player-selection">-</span></h3>	
+					</div>
+					
+					<div id="computer-option">
+						<h3>Computer: <span id="computer-selection">-</span></h3>	
+					</div>
+				</div>
+
+				<h3 id="result"></h3>
+
+				<div class="scores">
+					
+					<div id="player">
+						<h3>Player</h3>
+						<span id="play-score">
+							<strong>0</strong>
+						</span>
+					</div>
+					
+					<div id="computer">
+						<h3>Computer</h3>
+						<span id="comp-score">
+							<strong>0</strong>
+						</span>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="script.js"></script>	
+</html>
